@@ -1,0 +1,24 @@
+{
+  "Seimbang (3 cabang)": {
+    "n": 3280,
+    "tinggi": 8,
+    "search_acak_ms": 0.8972870000002331,
+    "search_terdalam_ms": 0.89810499999885,
+    "preorder_ms": 0.23217499999645952,
+    "inorder_ms": 0.3136499999982334,
+    "postorder_ms": 0.2005849999932252,
+    "jalur_ke_root_ms": 0.0002534999998715648,
+    "panjang_jalur": 8
+  },
+  "Condong (rantai)": {
+    "n": 3280,
+    "tinggi": 3280,
+    "search_acak_ms": 0.9398630000009689,
+    "search_terdalam_ms": 0.9098050000034164,
+    "preorder_ms": 0.5023450000066987,
+    "inorder_ms": 0.5879599999957463,
+    "postorder_ms": 0.45549000000164597,
+    "jalur_ke_root_ms": 0.0692309999999452,
+    "panjang_jalur": 3280
+  }
+}

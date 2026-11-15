@@ -1,0 +1,25 @@
+classDiagram
+    class Node {
+        +str id_pegawai
+        +str nama
+        +str jabatan
+        +Node atasan
+        +list~Node~ bawahan
+        +repr() str
+    }
+    class OrgTree {
+        +Node root
+        +insert_node(atasan, id_pegawai, nama, jabatan) Node
+        +search_node(kata_kunci, berdasarkan) list~Node~
+        +preorder(node, hasil) list~Node~
+        +inorder(node, hasil) list~Node~
+        +postorder(node, hasil) list~Node~
+        +jumlah_node() int
+        +tinggi() int
+        +jalur_ke_root(node) list~Node~
+        +cetak_pohon() void
+        -_cari_atasan(kunci) Node
+        -_dfs() Iterator~Node~
+    }
+    OrgTree "1" --> "1" Node : root
+    Node "1" o-- "0..*" Node : bawahan

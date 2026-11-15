@@ -1,0 +1,11 @@
+digraph G {
+  rankdir=TB; node [shape=box, style="rounded,filled", fillcolor="#EAF2FB", color="#2F5D8C", fontname="Helvetica", fontsize=11]; edge [color="#2F5D8C"];
+  R01 [label="Rektor\nProf. Ahmad Fauzi", fillcolor="#2F5D8C", fontcolor=white];
+  WR1 [label="Wakil Rektor I\nDr. Siti Rahmah"]; WR2 [label="Wakil Rektor II\nDr. Budi Santoso"]; WR3 [label="Wakil Rektor III\nDr. Nurul Huda"];
+  D01 [label="Dekan Fak. Sains dan Teknologi\nDr. Hendra Wijaya", fillcolor="#CFE2F5"];
+  WD1 [label="Wakil Dekan I\nDr. Rina Marlina"]; WD2 [label="Wakil Dekan II\nDr. Yusuf Hakim"];
+  KP1 [label="Ketua Prodi Teknik Informatika\nDr. Dewi Lestari", fillcolor="#CFE2F5"]; KP2 [label="Ketua Prodi Sistem Informasi\nDr. Andi Pratama", fillcolor="#CFE2F5"];
+  DS1 [label="Dosen TI\nRizky Maulana, M.Kom.", fillcolor="#F4F8EC"]; DS2 [label="Dosen TI\nPutri Anggraini, M.T.", fillcolor="#F4F8EC"]; ST1 [label="Staf Administrasi Prodi TI\nFajar Nugroho, S.Kom.", fillcolor="#F4F8EC"];
+  DS3 [label="Dosen SI\nDian Permata, M.Kom.", fillcolor="#F4F8EC"];
+  R01 -> {WR1 WR2 WR3 D01}; D01 -> {WD1 WD2 KP1 KP2}; KP1 -> {DS1 DS2 ST1}; KP2 -> DS3;
+}
